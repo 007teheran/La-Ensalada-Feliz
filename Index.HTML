@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ensalada Feliz</title>
+    <link rel="stylesheet" href="Styles.CSS">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(wallpaper.1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            min-height: 70vh;
+            padding: 50px 0 0 0;
+            position: relative;
+        }
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar {
+            display: none;
+        }
+        .header-content {
+            text-align: center;
+        }
+        .header-txt h1 {
+            font-size: 100px;
+            font-family: 'Satisfy', cursive;
+            color: white;
+            line-height: 1;
+            margin-bottom: 15px;
+        }
+        .header-txt p {
+            font-size: 35px;
+            color: aliceblue;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .information {
+            margin-top: -50px;
+        }
+        .information-content {
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .information-c1, .information-2 {
+            padding: 45px;
+            text-align: center;
+            background-color: white;
+            height: 300px;
+        }
+        .information-1 img, .information-2 img {
+            height: 300px;
+            width: 100%;
+        }
+        .our {
+            margin-top: -50px;
+            padding: 250px 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(wallpaper.2.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        .footer {
+            padding: 10px 0;
+            background-color: #2C2C2C;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-content ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-content a {
+            font-size: 18px;
+            text-transform: uppercase;
+            color: white;
+            text-align: center; 
+        }
+        .mensajito {
+            font-family: 'Poppins', sans-serif;
+            color: gold;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <div class="dropdown">
+                <button class="mainmenubtn" onclick="toggleDropdown()">Menú</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="Index.HTML">Inicio</a>
+                    <a href="somos.html">Acerca de nosotros</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="modelocanvas.html">Modelo de negocio</a>
+                </div>
+            </div>
+            <label for="menu" style="cursor: pointer;">
+                <img src="wallpaper.1.jpg" class="menu-icono" alt="menu" style="width: 25px;">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Index.HTML">Inicio</a></li>
+                    <li><a href="somos.html">Acerca de nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="modelocanvas.html">Modelo de negocio</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>El mejor menú</h1>
+                <p>Niños con hambre generan violencia</p>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+    function toggleDropdown() {
+        const dropdown = document.getElementById('dropdownMenu');
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+    </script>
+
+    <section class="information container">
+        <div class="information-content">
+            <div class="information-1">
+                <div class="information-c1">
+                    <br>
+                    <h3>FRASE</h3>
+                    <p>"Despertando alegría con delicias saludables que encienden sonrisas desde el primer momento"</p>
+                </div>
+                <div class="information-a1">
+                    <img src="wallpaper.2.jpg" alt="">
+                </div>
+            </div>
+            <div class="information-2">
+                <div class="information-b1">
+                    <img src="wallpaper.3.jpg" alt="">
+                </div>
+                <div class="information-c1">
+                    <h3>Nuestra Propuesta</h3>
+                    <p>Ofrecemos loncheras saludables y económicas para familias de bajos ingresos, facilitando el acceso a alimentos nutritivos y fomentando hábitos alimenticios sanos en niños, sin afectar el presupuesto familiar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <section class="our">
+            <div class="container">
+                <h2 style="color: #FFD700;">Contáctanos</h2>
+                <p style="color: #FFFFFF;">Para consultas y pedidos, contacta con nosotros en:</p> 
+                <p>
+                    <img width="35" height="30" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png" alt="Email Icon"><br>
+                    <a href="mailto:la.ensalada.feliz@gmail.com" style="color: #FFD700;">la.ensalada.feliz@gmail.com</a> 
+                </p>
+                <p>
+                    <img width="45" height="30" src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo-2016.png" alt="Instagram Icon"><br>
+                    <a href="https://www.instagram.com/la_ensalada_feliz/" target="_blank" style="color: #FFD700;">@la_ensalada_feliz</a> 
+                </p>
+            </div>
+        </section>
+    </footer>
+    
+
+</body>
+</html>
+
+
+

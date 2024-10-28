@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiénes Somos</title>
+    <link rel="stylesheet" href="Styles.CSS">
+    <style>
+        :root {
+            --verde-hoja: #8aae7c;
+            --verde-oliva: #b9cc8a;
+            --blanco-puro: #ffffff;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('wallpaper.1.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            min-height: 70vh;
+            padding: 50px 0;
+            position: relative; 
+        }
+        .menu {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-nav {
+            width: 150px;
+            height: auto;
+            position: absolute; 
+            top: 20px; 
+            right: 20px; 
+        }
+        .header-content {
+            text-align: center;
+            margin-top: 100px; 
+        }
+        h1 {
+            color: var(--verde-hoja);
+            font-size: 2.5em; 
+            margin: 0;
+        }
+        #quienes-somos {
+            background-color: var(--blanco-puro);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        h2 {
+            text-align: center;
+            color: var(--verde-hoja);
+            margin-top: 20px;
+        }
+        strong {
+            color: var(--verde-oliva);
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--blanco-puro);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: var(--verde-oliva);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: var(--verde-oliva);
+            color: var(--blanco-puro);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <div class="dropdown">
+                    <button class="mainmenubtn">Menú</button>
+                    <div class="dropdown-content">
+                        <a href="index.html">Inicio</a>
+                        <a href="somos.html">Quiénes Somos</a>
+                        <a href="modelocanvas.html">Modelo Canvas</a>
+                        <a href="productos.html">Productos</a>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>¿Quiénes Somos?</h1> 
+        </div>
+    </header>
+
+    <main>
+        <section id="quienes-somos">
+            <h2>Nosotros</h2>
+            <p>
+                Somos un grupo de cinco peludos que buscan emprender y crear algo especial. Queremos mucho a nuestro profe de tecnología, quien nos ha guiado y motivado durante todo el proceso, y esperamos que nuestra página web sea de mucha ayuda.
+            </p>
+
+            <h2>Nuestra Historia</h2>
+            <p>
+                Todo comenzó a inicios de año con el proyecto de investigación en el que decidimos enfocarnos en estudiar los hábitos alimenticios en los niños. Nos parecía un tema importante. 
+                El mayor problema fue encontrar una fundación para poder empezar con este trabajo y realizar el proyecto de Nueva Sociedad, lo que complicó nuestra investigación.
+                Lo que nos llevó a vernos en una situación difícil. Por lo que entendimos que necesitábamos ponernos las pilas en emprendimiento.
+                Hoy, después de mucho esfuerzo, estamos recuperando todas las materias y avanzando con nuestro proyecto. Esperamos que nuestra página web sea de mucha ayuda para poder avanzar.
+            </p>
+            <h2>Nuestro Logo</h2>
+            <p>
+                Hicimos este logotipo con una ensaladita que refleja el sentido del emprendimiento y la comida saludable. A la vez, está saludando y sonriendo, lo cual puede resultar más atractivo para los niños, que es la población a la que se quiere vender. Esto puede ayudar a atraer más al público.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
